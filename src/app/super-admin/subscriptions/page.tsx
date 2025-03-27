@@ -31,7 +31,7 @@ interface SchoolSubscription {
 export default function Subscriptions() {
     // Mock data for subscription plans
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const [plans, setPlans] = useState<SubscriptionPlan[]>([
+    const plans: SubscriptionPlan[] = [
         {
             id: "1",
             name: "Basic Plan",
@@ -80,11 +80,11 @@ export default function Subscriptions() {
             features: ["Unlimited drivers", "Real-time analytics", "24/7 support", "Advanced route optimization", "API access"],
             isActive: true,
         },
-    ]);
+    ];
 
     // Mock data for school subscriptions
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const [schoolSubscriptions, setSchoolSubscriptions] = useState<SchoolSubscription[]>([
+    const schoolSubscriptions: SchoolSubscription[] = [
         {
             id: "1",
             schoolId: "1",
@@ -163,7 +163,7 @@ export default function Subscriptions() {
             lastPayment: "",
             nextPayment: "2023-08-01",
         },
-    ]);
+    ];
 
     // Search and filter states
     const [searchTerm, setSearchTerm] = useState("");

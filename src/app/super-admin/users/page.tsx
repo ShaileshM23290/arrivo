@@ -16,7 +16,7 @@ interface User {
 
 export default function Users() {
     // Mock data - in a real app, this would come from an API
-    const [users, setUsers] = useState<User[]>([
+    const users: User[] = [
         {
             id: "1",
             name: "John Principal",
@@ -89,7 +89,7 @@ export default function Users() {
             lastActive: "2023-07-11",
             isActive: true,
         },
-    ]);
+    ];
 
     // Search state
     const [searchTerm, setSearchTerm] = useState("");
