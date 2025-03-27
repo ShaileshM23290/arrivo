@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Save, RefreshCw, Upload, Download, Bell, Mail, Globe, Key, Database, Server } from "lucide-react";
+import { Save, Upload, Download, Bell, Globe, Database, Server } from "lucide-react";
 
 export default function Settings() {
     // State for form values

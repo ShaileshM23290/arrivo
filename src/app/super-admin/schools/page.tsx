@@ -17,6 +17,7 @@ interface School {
 
 export default function Schools() {
     // Mock data - in a real app, this would come from an API
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const [schools, setSchools] = useState<School[]>([
         {
             id: "1",

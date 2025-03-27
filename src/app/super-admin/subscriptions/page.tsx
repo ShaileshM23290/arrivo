@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Search, Plus, Filter, MoreHorizontal, Pencil, Trash, CheckCircle, XCircle, Clock, Calendar } from "lucide-react";
+import { Search, Plus, Filter, MoreHorizontal, Pencil, CheckCircle, XCircle, Clock } from "lucide-react";
 import Link from "next/link";
 
 // Define types for our data
@@ -30,6 +30,7 @@ interface SchoolSubscription {
 
 export default function Subscriptions() {
     // Mock data for subscription plans
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const [plans, setPlans] = useState<SubscriptionPlan[]>([
         {
             id: "1",
@@ -82,6 +83,7 @@ export default function Subscriptions() {
     ]);
 
     // Mock data for school subscriptions
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const [schoolSubscriptions, setSchoolSubscriptions] = useState<SchoolSubscription[]>([
         {
             id: "1",
